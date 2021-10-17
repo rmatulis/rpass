@@ -1,5 +1,5 @@
 /*
-Copyright © 2021 NAME HERE <EMAIL ADDRESS>
+Copyright © 2021 Rowan Matulis rowan.matulis@gmail.com
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -13,12 +13,13 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
+
 package cmd
 
 import (
 	"fmt"
-	"os"
 	"github.com/spf13/cobra"
+	"os"
 
 	"github.com/spf13/viper"
 )
@@ -28,7 +29,7 @@ var cfgFile string
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:   "rpass",
-	Short: "A brief description of your application",
+	Short: "RPass is a password generator app",
 	Long: `A longer description that spans multiple lines and likely contains
 examples and usage of using your application. For example:
 
@@ -53,7 +54,7 @@ func init() {
 	// Cobra supports persistent flags, which, if defined here,
 	// will be global for your application.
 
-	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.rpass.yaml)")
+	//rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.rpass.yaml)")
 
 	// Cobra also supports local flags, which will only run
 	// when this action is called directly.
